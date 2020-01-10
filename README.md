@@ -1,5 +1,5 @@
-##SAGE Project - Web Scraping Assignment
+## SAGE Project - Web Scraping Assignment
 
-###Requirements
-
-####Install beautifulSoup4 using pip3 install beautifulSoup4
+### Requirements
+1. ##### python3
+2. ##### beautifulSoup4
