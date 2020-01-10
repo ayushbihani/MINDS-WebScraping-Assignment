@@ -43,7 +43,7 @@ def writeToCsv(summary):
                 orbitals_file.write("%s, %s\n"%(str(getIso(day)), 0))
 
 
-parsed = []
+parsed = list()
 for row in rows[3:]:
     td = row.find_all('td')
     check_table = row.findAll("table",{"class":"navbox hlist"})
@@ -56,7 +56,7 @@ for row in rows[3:]:
 filtered_date = list(filter(lambda x:len(x) > 1, parsed))
 length = len(filtered_date)
 counter = 0
-summarized = {}
+summarized = dict()
 
 while counter < length:
     date = filtered_date[counter][0]
